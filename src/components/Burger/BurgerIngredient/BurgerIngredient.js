@@ -3,6 +3,7 @@ import './BurgerIngredient.css';
 import PropTypes from 'prop-types';
 
 class BurgerIngredient extends Component{
+
     
     render(){
         let ingredient = null;
@@ -21,14 +22,14 @@ class BurgerIngredient extends Component{
             case('meat'):
                 ingredient = <div className='Meat'></div>;
                 break;
+            case('bacon'):
+                ingredient = <div className='Bacon'></div>;
+                 break;                
             case('cheese'):
                 ingredient = <div className='Cheese'></div>;
                 break;
-            case('bacon'):
-               ingredient = <div className='bacon'></div>;
-                break;
             case('salad'):
-                ingredient = <div className='salad'></div>;
+                ingredient = <div className='Salad'></div>;
                  break;
             default:
                 ingredient=null;
